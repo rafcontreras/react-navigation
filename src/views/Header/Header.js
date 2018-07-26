@@ -474,10 +474,10 @@ class Header extends React.PureComponent {
           {...wrapperProps}
           maskElement={
             <View style={styles.iconMaskContainer}>
-              <Image
+              {/*<Image
                 source={require('../assets/back-icon-mask.png')}
                 style={styles.iconMask}
-              />
+              />*/}
               <View style={styles.iconMaskFillerRect} />
             </View>
           }

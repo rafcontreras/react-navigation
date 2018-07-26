@@ -10,7 +10,7 @@ import {
 
 import TouchableItem from '../TouchableItem';
 
-const defaultBackImage = require('../assets/back-icon.png');
+// const defaultBackImage = require('../assets/back-icon.png');
 
 class HeaderBackButton extends React.PureComponent {
   static defaultProps = {
@@ -32,34 +32,34 @@ class HeaderBackButton extends React.PureComponent {
     });
   };
 
-  _renderBackImage() {
-    const { backImage, title, tintColor } = this.props;
+  // _renderBackImage() {
+  //   const { backImage, title, tintColor } = this.props;
 
-    let BackImage;
-    let props;
+  //   let BackImage;
+  //   let props;
 
-    if (React.isValidElement(backImage)) {
-      return backImage;
-    } else if (backImage) {
-      BackImage = backImage;
-      props = {
-        tintColor,
-        title,
-      };
-    } else {
-      BackImage = Image;
-      props = {
-        style: [
-          styles.icon,
-          !!title && styles.iconWithTitle,
-          !!tintColor && { tintColor },
-        ],
-        source: defaultBackImage,
-      };
-    }
+  //   if (React.isValidElement(backImage)) {
+  //     return backImage;
+  //   } else if (backImage) {
+  //     BackImage = backImage;
+  //     props = {
+  //       tintColor,
+  //       title,
+  //     };
+  //   } else {
+  //     BackImage = Image;
+  //     props = {
+  //       style: [
+  //         styles.icon,
+  //         !!title && styles.iconWithTitle,
+  //         !!tintColor && { tintColor },
+  //       ],
+  //       source: defaultBackImage,
+  //     };
+  //   }
 
-    return <BackImage {...props} />;
-  }
+  //   return <BackImage {...props} />;
+  // }
 
   render() {
     const { onPress, pressColorAndroid, layoutPreset, title } = this.props;
@@ -77,7 +77,7 @@ class HeaderBackButton extends React.PureComponent {
         borderless
       >
         <View style={styles.container}>
-          {this._renderBackImage()}
+          {/*{this._renderBackImage()}*/}
           {this._maybeRenderTitle()}
         </View>
       </TouchableItem>
