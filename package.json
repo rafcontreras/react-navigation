@@ -82,9 +82,6 @@
     "coveragePathIgnorePatterns": [
       "jest-setup.js"
     ],
-    "moduleNameMapper": {
-      "\\.png$": "<rootDir>/assetsTransformer.js"
-    },
     "modulePathIgnorePatterns": [
       "<rootDir>/examples/"
     ],
